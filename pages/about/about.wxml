@@ -1,0 +1,22 @@
+<view id="top">
+  <view class="1" style="display:flex;margin-top: 15px;">
+    <view class="arrow" bindtap="test1"></view>
+    <text style="font-size:x-large;margin-left:112rpx;margin-top: 64rpx;">关于我们</text>
+  </view>
+</view>
+<view class="fill"></view>
+<view class="total">
+  <view class="box"><text style="margin-top:30rpx;font-size:40rpx;position:absolute;margin-left:22rpx;color:rgb(66, 66, 66) ;font-weight: 350;">服务协议</text>
+    <image src="/image/右箭头灰.png" style="width:50px;height:50px;position:absolute;right:6px;border-radius:50%;margin-top:8rpx;margin-right:-40rpx;"></image>
+  </view>
+  <view class="box"><text style="margin-top:30rpx;font-size:40rpx;position:absolute;margin-left:22rpx;color:rgb(66, 66, 66) ;font-weight: 350;">隐私政策</text>
+    <image src="/image/右箭头灰.png" style="width:50px;height:50px;position:absolute;right:6px;border-radius:50%;margin-top:8rpx;margin-right:-40rpx;"></image>
+  </view>
+  <view class="box"><text style="margin-top:30rpx;font-size:40rpx;position:absolute;margin-left:22rpx;color:rgb(66, 66, 66) ;font-weight: 350;">特别说明</text>
+    <image src="/image/右箭头灰.png" style="width:50px;height:50px;position:absolute;right:6px;border-radius:50%;margin-top:8rpx;margin-right:-40rpx;"></image>
+  </view>
+  <view class="box"><text style="margin-top:30rpx;font-size:40rpx;position:absolute;margin-left:22rpx;color:rgb(66, 66, 66) ;font-weight: 350;">功能介绍</text>
+    <image src="/image/右箭头灰.png" style="width:50px;height:50px;position:absolute;right:6px;border-radius:50%;margin-top:8rpx;margin-right:-40rpx;"></image>
+  </view>
+  <text style="width:100%;height:50px;position:absolute;right:6px;border-radius:50%;margin-top:400rpx;text-align: center;color:rgb(66, 66, 66) ;font-weight: 350;font-size: 30rpx;">当前版本1.0</text>
+</view>

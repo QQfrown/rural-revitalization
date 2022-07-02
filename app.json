@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/index_ns/index_ns",
+    "pages/square_s/square_s",
+    "pages/square_ns/square_ns",
+    "pages/zx/zx",
+    "pages/my/my",
+    "pages/my_ns/my_ns",
+    "pages/tour/tour",
+    "pages/search/search",
+    "pages/share/share",
+    "pages/writer/writer",
+    "pages/article/article",
+    "pages/team/team",
+    "pages/apply/apply",
+    "pages/about/about",
+    "pages/love/love",
+    "pages/competition/competition",
+    "pages/gotoWeb/gotoWeb",
+    "pages/mypost/mypost",
+    "pages/text/text",
+    "pages/detail/detail",
+    "pages/edit/edit",
+    "pages/zhunong/zhunong",
+    "Resource/navbar/index",
+    "components/tabBar",
+    "pages/test/test",
+    "pages/test2/test2"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#7eba74",
+    "navigationBarTitleText": "真心·振兴",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+
+  "plugins": {
+    
+  },
+
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+
+  "sitemapLocation": "sitemap.json",
+
+  "usingComponents": {
+    "iconfont": "./iconfont/iconfont",
+    "van-area": "@vant/weapp/area/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-tag": "@vant/weapp/tag/index"
+  }
+}

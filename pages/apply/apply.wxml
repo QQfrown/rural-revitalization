@@ -1,0 +1,50 @@
+<view id="top">
+  <view class="1" style="display:flex;margin-top: 15px;">
+    <view class="arrow" bindtap="test"></view>
+<text style="font-size:x-large;margin-left:270rpx;margin-top: 76rpx;">报名填写</text>
+  </view>
+</view>
+<view id="body">
+  <form bindsubmit="submit" >
+    <van-cell-group>
+      <van-field
+        name="realName"
+        required
+        clearable
+        label="姓名"
+        placeholder="请输入姓名"
+      />
+      <van-cell title="性别" required class="my-margin">
+        <van-radio-group value="{{ gender }}" name="gender" direction="horizontal" bind:change="sixChange">
+            <van-radio name="1">男</van-radio>
+            <van-radio name="0">女</van-radio>
+        </van-radio-group>
+      </van-cell>
+      <van-field
+        name="specialty"
+        required
+        clearable
+        label="特长"
+        placeholder="请输入特长"
+      />
+      
+      <van-field
+        name="telephone"
+        label="联系电话"
+        placeholder="请输入电话"
+        required
+        clearable
+      />
+
+      <van-field
+        name="addressDetail"
+        required
+        clearable
+        label="现居地址"
+        placeholder="请输入地址"
+      />
+    </van-cell-group>
+    <textarea placeholder="请输入自我介绍" name="selfIntroduction" id="selfIntroduction"></textarea>
+    <button id="btu" type="primary" form-type="submit">我要报名</button>
+  </form>
+</view>

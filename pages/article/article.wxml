@@ -1,0 +1,93 @@
+<view id="all">
+  <view id="info">
+    <view class="arrow" bindtap="test"></view>
+    <view id="avatar">
+      <image src="{{info.userInfo.avatarUrl}}"></image>
+    </view>
+    <view style="margin-top: 9px;">
+      <view id="auther">作者:{{info.userInfo.nickname}}</view>
+    </view>
+  </view>
+  <view class="fill"></view>
+  <swiper id="sw" autoplay="true" indicator-dots="true" circular="true" style="height: 450rpx;width: 720rpx;margin-left: 15rpx;">
+    <swiper-item wx:for="{{info.imgUrls}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+  <view id="article">
+    <view id="articleTop">
+      <view id="title1">{{info.title}}</view>
+      <view class="collect" wx:if="{{!collect}}" bindtap="collect">
+        <iconfont name="shoucang2-copy" size="40"/>
+        <!-- <image src="/image/收藏1.png"></image> -->
+      </view>
+      <view class="collect" wx:if="{{collect}}" bindtap="noCollect">
+        <iconfont name="shoucang2" size="40"/>
+        <!-- <image src="/image/收藏.png"></image> -->
+      </view>
+    </view>
+    <view><text>{{info.describeDetail}}</text></view>
+  </view>
+  <view id="comment">
+    <view class="amount">
+      <text>评论</text>
+      <!-- <text>{{info.amount}}</text> -->
+    </view>
+    <view class="top1">
+      <view class="logo">
+        <image src="{{avatarUrl}}"></image>
+      </view>
+      <view class="search1" bindtap="showPopup1">
+        <view>说点什么叭~</view>
+      </view>
+    </view>
+    <view wx:for="{{comments}}" wx:if="{{index < 2}}" wx:key="index">
+      <view class="commentUser">
+        <view class="userAvatarImage">
+          <image src="{{item.avatarUrl}}"></image>
+        </view>
+        <view class="commentsInfo">
+          <view class="commentsNickName">{{item.nickname}}</view>
+          <view class="commentsContent">{{item.commentBody}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="bottomComment" bindtap="showPopup" wx:if="{{haveComment}}">查看全部评论</view>
+    <view class="bottomComment" wx:if="{{!haveComment}}">还没有评论，快来抢沙发</view>
+  </view>
+</view>
+<van-popup show="{{ show }}" position="bottom" custom-style="height: 80%" closeable round bind:close="onClose">
+  <view id="popup">全部评论</view>
+  <view class="amount">
+    <text>评论</text>
+  </view>
+  <view wx:for="{{comments}}" wx:key="index">
+    <view class="commentUser">
+      <view class="userAvatarImage">
+        <image src="{{item.avatarUrl}}"></image>
+      </view>
+      <view class="commentsInfo">
+        <view class="commentsNickName">{{item.nickname}}</view>
+        <view class="commentsContent">{{item.commentBody}}</view>
+      </view>
+    </view>
+  </view>
+</van-popup>
+<van-popup show="{{ show1 }}" position="bottom" custom-style="height: 16%" closeable round bind:close="onClose1">
+  <form bindsubmit="submit">
+    <view id="show">
+      <view>
+        <input placeholder="评论" cursor-spacing="14" name="comment" />
+      </view>
+      <button size="mini" form-type="submit" type="primary" bindtap="onClose1">发布</button>
+    </view>
+  </form>
+</van-popup>
+<view class="write" bindtap="like" wx:if="{{!like}}">
+  <iconfont name="dianzan-copy" size="40"/>
+  <!-- <image src="/image/点赞.png"></image> -->
+</view>
+<view class="write" wx:if="{{like}}">
+  <iconfont name="dianzan" size="40"/>
+  <!-- <image src="/image/点赞S.png"></image> -->
+</view>

@@ -1,0 +1,58 @@
+<wxs module="cutString">
+  module.exports.cut = function(str){
+    if(str.length == 0 || str == undefined){
+      return;
+    }
+    else{
+      return str.substring(0,10);
+    }
+  }
+</wxs>
+<view class="lb" style="margin-top: -122rpx;">
+  <swiper indicator-dots="true" autoplay="true" interval="3000" current="0" circular="true" style="width:100%;">
+    <swiper-item>
+      <image class="img_s" src="{{imgurl}}/upload/otherType/home/hottopic.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <text class="head_text" bindtap="viewTap">#本周人气产品————荔枝</text>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imgurl}}/upload/otherType/home/research.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <text class="head_text">标题2</text>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imgurl}}/upload/otherType/home/research2.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <text class="head_text">标题3</text>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='page_row'>
+  <view class="arrow" bindtap="test"></view>
+  <image class="logo" src="{{imgurl}}/upload/otherType/logo.png"></image>
+  <view class="search" bindtap='search'>
+    <view class="df search_arr">
+      <icon class="searchcion" size='16' type='search'></icon>
+      <text class="sousuo">请输入关键字</text>
+    </view>
+  </view>
+</view>
+
+<view class="word">
+  <iconfont name="dingdan"/>
+  <!-- <image src="/Resource/旅游/order_unread.png" style="height:50rpx;width:50rpx;margin-top:10rpx;margin-left: 22rpx;"></image> -->
+  <text>{{title}}</text>
+</view>
+<block wx:for="{{info}}" wx:key="index">
+    <view class="one" bindtap="gotoWeb" data-value="{{item.jumpUrl}}">
+      <view class="left">
+        <image src="{{item.imageUrl}}" style="height:160rpx;width:240rpx;margin-top: 34rpx;margin-left:30rpx;"></image>
+        <view class="text"><text>{{item.title}}</text></view>
+      </view>
+      <view class="right">
+        <text>{{item.describeBrief}}</text>
+      </view>
+    <view style="margin-left:292rpx;margin-top: 12rpx;">
+      <text style="margin-left: 30rpx;opacity: 88%;">{{cutString.cut(item.publishTime)}}</text>
+    </view>
+    </view>
+</block>
+<view id="last" wx:if="{{nodata}}">我是有底线哒~</view>

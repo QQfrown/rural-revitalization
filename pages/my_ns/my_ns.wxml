@@ -1,0 +1,100 @@
+<view class="lb">
+  <swiper indicator-dots="true" autoplay="true" interval="3000" current="0" circular="true" style="width:100%;">
+    <swiper-item>
+      <image class="img_s" src="{{imaUrl}}/upload/otherType/home/homebar.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <text class="head_text" bindtap="viewTap">#本周上新————杨桃</text>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imaUrl}}/upload/otherType/home/research.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <text class="head_text">标题2</text>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imaUrl}}/upload/otherType/home/research2.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <text class="head_text">标题3</text>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="top">
+  <view class="a">
+    <view class="root" wx:if="{{isLogin}}">
+      <image class="touxiang" src="{{userInfo.avatarUrl}}"></image>
+      <text class="nicheng">{{userInfo.nickName}}</text>
+      <view class="isStu"><text style="margin-left:7px;position:absolute;margin-top: 2px;">{{isStu}}</text></view>
+      <!-- <van-tag color="#7eba74" text-color="#ffffff" size="medium" >{{isStu}}</van-tag> -->
+      <!--退出登录按钮-->
+      <!-- <button id="btu" style="margin-right:70rpx;margin-top:-74rpx;" bindtap="nologin">
+        <text>退出登录</text>
+      </button> -->
+    </view>
+    <!--登录按钮-->
+    <view wx:else="">
+      <button id="login" bindtap="login" style="margin-top: 60rpx;width:38%;margin-right:256rpx;margin-bottom:20rpx">登录</button>
+    </view>
+  </view>
+  <!-- <view class="text">
+  </view> -->
+</view>
+
+<view style="background-color: #f7f8fa;padding-top: 5%;padding-bottom: 80%;">
+  <van-cell-group inset>
+    <van-cell title="我的信息" size="large" bindtap="test4" is-link>
+      <iconfont slot="icon" class="my-icon" name="yonghu" ></iconfont>
+      <!-- <van-icon slot="icon" class="iconfont" class-prefix="icon" name="gerenzhongxin"></van-icon> -->
+    </van-cell>
+    <van-cell title="身份切换" size="large" bindtap="test1" is-link>
+      <iconfont slot="icon" class="my-icon" name="qiehuan" ></iconfont>
+      <!-- <van-icon slot="icon" class="iconfont" class-prefix="icon" name="qiehuanchengshi"></van-icon> -->
+    </van-cell>
+    <!-- <van-cell title="我的贴子" size="large" bindtap="test5" is-link>
+      <iconfont slot="icon" class="my-icon" name="wenjian" ></iconfont> -->
+      <!-- <van-icon slot="icon" class="iconfont" class-prefix="icon" name="shuju"></van-icon> -->
+    <!-- </van-cell> -->
+    <!-- <van-cell title="与我相关" size="large" bindtap="test6" is-link>
+      <iconfont slot="icon" class="my-icon" name="tongzhihuotixing" ></iconfont> -->
+      <!-- <van-icon slot="icon" class="iconfont" class-prefix="icon" name="zhengcefagui"></van-icon> -->
+    <!-- </van-cell> -->
+    <van-cell title="关于我们" size="large" bindtap="test2" is-link>
+      <iconfont slot="icon" class="my-icon" name="tishi" ></iconfont>
+      <!-- <van-icon slot="icon" class="iconfont" class-prefix="icon" name="a-guanyuwomenxitong"></van-icon> -->
+    </van-cell>
+    <van-cell title="退出" size="large" bindtap="nologin" wx:if="{{isLogin}}" is-link>
+      <iconfont slot="icon" class="my-icon" name="tuichu" ></iconfont>
+      <!-- <van-icon slot="icon" class="iconfont" class-prefix="icon" name="tuichudenglu"></van-icon> -->
+    </van-cell>
+  </van-cell-group>
+</view>
+
+<!-- <view class="one" bindtap="test4">
+  <image src="/Resource/my/myInfo.png" style="height:60rpx;width:76rpx;margin-left: 144rpx;margin-bottom:4rpx;"></image>
+  <text class="t" style="margin-top:10rpx;font-size:large;position:absolute;margin-left:82rpx;">我的信息</text>
+  <image src="/Resource/my/arrow-right.png" style="height:60rpx;width:70rpx;margin-left:396rpx;margin-bottom: 4rpx;"></image>
+</view>
+<view class="one" bindtap="test2" style="margin-top: 20rpx;background-color: white;">
+  <image src="/Resource/my/collection.png" style="height:60rpx;width: 76rpx;margin-left:142rpx;margin-bottom:4rpx;"></image>
+  <text style="margin-top:10rpx;font-size:large;position:absolute;margin-left:82rpx;">我的收藏</text>
+  <image src="/Resource/my/arrow-right.png" style="height:60rpx;width:70rpx;margin-left:396rpx;margin-bottom: 4rpx;"></image>
+</view>
+<view class="one" bindtap="test1" style="margin-top: 20rpx;background-color: white;">
+  <image src="/Resource/my/identity.jpg" style="height:60rpx;width:90rpx;margin-left: 128rpx;margin-bottom:4rpx;"></image>
+  <text style="margin-top:10rpx;font-size:large;position:absolute;margin-left:82rpx;">身份切换</text>
+  <image src="/Resource/my/arrow-right.png" style="height:60rpx;width:70rpx;margin-left:396rpx;margin-bottom: 4rpx;"></image>
+</view>
+<view class="one" bindtap="test3" style="margin-top: 20rpx;background-color: white;">
+  <image src="/Resource/my/about.png" style="height:46rpx;width:60rpx;margin-left:144rpx;margin-bottom: 8rpx;"></image>
+  <text style="margin-top: 4rpx;font-size:large;position:absolute;margin-left:100rpx;">关于我们</text>
+  <image src="/Resource/my/arrow-right.png" style="height:60rpx;width:70rpx;margin-left:410rpx;margin-bottom: 4rpx;"></image>
+</view>
+<view class="one" bindtap="test5" style="margin-top: 20rpx;background-color: white;">
+  <image src="/Resource/my/mypost.png" style="height:90rpx;width:90rpx;margin-left:128rpx;margin-top: -16rpx;position:absolute;"></image>
+  <text style="margin-top: 0rpx;font-size:large;position:absolute;margin-left:302rpx;">我的帖子</text>
+  <image src="/Resource/my/arrow-right.png" style="height:60rpx;width:70rpx;margin-left:616rpx;margin-bottom: 4rpx;"></image>
+</view>
+<view class="one" bindtap="test6" style="margin-top: 20rpx;background-color: white;">
+  <image src="/Resource/my/related.png" style="height:60rpx;width:78rpx;margin-left: 140rpx;margin-bottom:4rpx;"></image>
+  <text style="margin-top:10rpx;font-size:large;position:absolute;margin-left:82rpx;">与我相关</text>
+  <image src="/Resource/my/arrow-right.png" style="height:60rpx;width:70rpx;margin-left:396rpx;margin-bottom: 4rpx;"></image>
+</view> -->
+
+<!-- 引入底部导航栏 -->
+<import src="../../components/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />

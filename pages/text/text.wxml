@@ -1,0 +1,27 @@
+<!--pages/text/text.wxml-->
+<view id="top">
+  <view class="1" style="display:flex;margin-top: 15px;">
+    <view class="arrow" bindtap="test1"></view>
+    <view id="logo">
+      <image src="{{avatarUrl}}"></image>
+    </view>
+    <view id="search1" bindtap="gotoSearch" data-pageName="text">
+      <image src="https://s1.imagehub.cc/images/2021/10/16/find.png"></image>
+      <view>请输入关键词</view>
+    </view>
+  </view>
+</view>
+<view class="fill"></view>
+<block wx:for="{{info}}" wx:key="id">
+  <view class="shop-item" bindtap="gotoWeb" data-value="{{item.jumpUrl}}">
+    <view class="thumb">
+      <image src="{{item.imageUrl}}" mode="aspectFill"></image>
+    </view>
+    <view class="info">
+      <text class="shop-title">{{item.title}}</text>
+      <text>项目简介：{{item.describeBrief}}</text>
+      <text>{{item.publishTime}}</text>
+    </view>
+  </view>
+</block>
+<view id="last" wx:if="{{nodata}}">我是有底线哒~</view>

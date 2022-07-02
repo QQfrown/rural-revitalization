@@ -1,0 +1,80 @@
+<wxs module="cutString">
+  module.exports.cut = function(str){
+    if(str.length == 0 || str == undefined){
+      return;
+    }
+    else{
+      return str.substring(0,10);
+    }
+  }
+</wxs>
+<view id="all">
+  <view class="arrow" bindtap="test1"></view>
+  <view id="top">
+    <view id="text1">全部</view>
+    <view class="topview">
+      <view class="text2">{{allLikeNum}}</view>
+      <view class="text3">获赞</view>
+    </view>
+    <view class="topview">
+      <view class="text2">{{allCommentNum}}</view>
+      <view class="text3">评论</view>
+    </view>
+    <view class="topview">
+      <view class="text2">{{allViewNum}}</view>
+      <view class="text3">浏览</view>
+    </view>
+  </view>
+  <view id="write" bindtap="gotoWrite">
+    <iconfont name="bianji" size="60"></iconfont>
+    <!-- <image src="https://s1.imagehub.cc/images/2022/03/23/YDUI-.png"></image> -->
+  </view>
+  <view wx:for="{{info}}" wx:key="index">
+    <view class="page" bindtap="gotoDetail" data-value="{{item}}">
+      <view class="mid">
+        <view class="mid_right">
+          <view class="title">{{item.title}}</view>
+          <view class="brief">{{item.describeBrief}}</view>
+        </view>
+        <view class="img">
+          <image src="{{item.imgUrls[0]}}"></image>
+        </view>
+      </view>
+      <view class="scan">
+        <view class="scanInfo">
+          <view>
+            <iconfont name="dianzan1" ></iconfont>
+            <!-- <image src="/image/1.png"></image> -->
+          </view>
+          <view class="scan_num">{{item.likeNum}}</view>
+        </view>
+        <view class="scanInfo">
+          <view>
+            <iconfont name="pinglun" ></iconfont>
+            <!-- <image src="/image/评论.png"></image> -->
+          </view>
+          <view class="scan_num">{{item.commentNum}}</view>
+        </view>
+        <view class="scanInfo">
+          <view>
+            <iconfont name="shoucang1" ></iconfont>
+            <!-- <image src="/image/收藏1.png"></image> -->
+          </view>
+          <view class="scan_num">{{item.collectNum}}</view>
+        </view>
+        <view class="scanInfo">
+          <view>
+            <iconfont name="liulan" ></iconfont>
+            <!-- <image src="/image/浏览量.png"></image> -->
+          </view>
+          <view class="scan_num">{{item.viewNum}}</view>
+        </view>
+        <view class="time"><text>{{cutString.cut(item.publishTime)}}</text></view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{count===0}}" style="height: 100%;">
+    <view id="nopost">没有编写的帖子~</view>
+  </view>
+  <view id="last" wx:if="{{nodata && count!==0}}">没有更多的帖子啦~</view>
+</view>

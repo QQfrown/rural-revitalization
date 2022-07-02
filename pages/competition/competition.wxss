@@ -1,0 +1,97 @@
+#title{
+  background-color: #7eba74;
+  height: 500rpx;
+  width: 750rpx;
+}
+#body{
+  position:absolute;
+  background-color:whitesmoke;
+  height: 2000rpx;
+  width: 750rpx;
+  top: 340rpx;
+  border-top-left-radius: 100rpx;
+  border-top-right-radius: 100rpx;
+}
+#hello{
+  font-size: 56rpx;
+  padding-left: 215rpx;
+  padding-top: 95rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 600rpx;
+}
+#hello1{
+  color: rgb(56, 56, 56);
+  padding-top: 40rpx;
+  padding-left: 82rpx;
+}
+#hello2{
+  color: rgb(56, 56, 56);
+  padding-top: 30rpx;
+  padding-left: 86rpx;
+}
+#search1{
+  display: flex;
+  margin-left: 50rpx;
+  padding-left: 20rpx;
+  margin-right: 50rpx;
+  background-color:white;
+  border-radius: 20rpx;
+  margin-top: 50rpx;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+}
+#search1 image{
+  width: 50rpx;
+  height: 50rpx;
+}
+#search1 view{
+  padding-left: 20rpx;
+  line-height: 50rpx;
+}
+#list{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.single{
+  border: solid 1rpx rgb(148, 148, 148);
+  background-color: white;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.single image{
+  padding: 20rpx 20rpx;
+  width: 650rpx;
+  height: 455rpx;
+  border-radius: 16rpx;
+}
+
+.name{
+  font-size: 37rpx;
+  padding-left: 30rpx;
+  padding-bottom: 20rpx;
+}
+.describe{
+  color: rgb(80, 79, 79);
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 30rpx;
+}
+#last{
+  text-align: center;
+  margin-top: 60rpx;
+  margin-bottom: 50rpx;
+}
+.arrow{
+  position: absolute;
+  left: 40rpx;
+  top: 114rpx;
+  display: flex;
+  width: 25rpx;
+  height:25rpx;
+  border-left: 4rpx solid black;
+  border-top: 4rpx solid black;
+  transform: rotate(-45deg);
+}

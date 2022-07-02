@@ -1,0 +1,58 @@
+<view class="container">
+  <view class="lb">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" current="0" circular="true" style="width:100%;">
+      <swiper-item>
+        <image class="img_s" src="{{imaUrl}}/upload/otherType/home/hottopic.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+        <text class="head_text" bindtap="viewTap">#热门话题</text>
+      </swiper-item>
+      <swiper-item>
+        <image src="{{imaUrl}}/upload/otherType/home/research.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+        <!-- <text class="head_text">标题2</text> -->
+      </swiper-item>
+      <swiper-item>
+        <image src="{{imaUrl}}/upload/otherType/home/research2.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+        <!-- <text class="head_text">标题3</text> -->
+      </swiper-item>
+    </swiper>
+  </view>
+
+ 
+  <view class="left">
+    <view class="up" bindtap="test1">
+      <iconfont name="duijie" size="65"></iconfont>
+      <!-- <image src="{{imaUrl}}/upload/otherType/image/项目对接.png" style="height:75px;width: 80px;"></image> -->
+      <view style="text-align: center;"><text>项目对接</text></view>
+    </view>
+    <view class="down" bindtap="test2">
+      <iconfont name="hezuo" size="65"></iconfont>
+      <!-- <image src="{{imaUrl}}/upload/otherType/image/商务合作.png" style="height:75px;width: 80px;"></image> -->
+      <view style="text-align: center;"><text>商务合作</text></view>
+    </view>
+  </view>
+
+  <view class="bottom"  bindtap="test3">
+    <iconfont name="a-chartqushitiaoyantongji" size="65"></iconfont>
+    <!-- <image src="{{imaUrl}}/upload/otherType/image/比赛资讯.PNG" style="width:80px;height:75px;margin-top:0px;margin-left: 106px;"></image> -->
+    <text>资讯</text>
+  </view>
+
+    <view class="talk">
+      <view><text>忆君心似西江水，日夜东流无歇时。——鱼玄机</text></view>
+    </view>
+
+    <view class="talk">
+      <view><text>磧里征人三十万，一时回向月明看。——李益</text></view>
+    </view>
+
+    <view class="talk">
+      <view><text>醉后不知天在水，满船清梦压星河。——唐温如</text></view>
+    </view>
+
+    <view class="talk">
+      <view><text>欲买桂花同载酒，终不似，少年游。——刘过</text></view>
+    </view>
+  <!-- 引入底部导航栏 -->
+  <import src="../../components/tabBar.wxml" />
+  <template is="tabBar" data="{{tabBar}}" />
+
+</view>

@@ -1,0 +1,27 @@
+<view id="top">
+  <view class="1" style="display:flex;margin-top: 15px;">
+    <view class="arrow" bindtap="test"></view>
+    <view class="top-title"><text>文章编辑</text></view>
+  </view>
+</view>
+<view class="fill"></view>
+<view id="all">
+  <form bindsubmit="submit">
+    <view id="title">
+      <van-cell-group>
+        <van-field name="title" value="{{ title }}" clearable label="标题" placeholder="请输入标题" />
+      </van-cell-group>
+    </view>
+    <view id="brief">
+      <van-cell-group>
+        <van-field name="describeBrief" value="{{ brief }}" clearable label="简介" placeholder="请输入文章简介" />
+      </van-cell-group>
+    </view>
+    <view id="text">
+      <textarea placeholder="请输入文章内容" name="describeDetail" maxlength="60000"></textarea>
+      <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" 
+        bind:delete="deleteClick" max-count="2" deletable="{{ true }}" />
+    </view>
+    <button form-type="submit" type="primary">提交</button>
+  </form>
+</view>

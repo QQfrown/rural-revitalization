@@ -1,0 +1,45 @@
+#all{
+  background-color: rgb(223, 223, 223);
+}
+#title{
+  margin-left: 58rpx;
+  font-size: 39rpx;
+  font-weight: 490;
+  margin-top: 60rpx;
+  margin-bottom: 20rpx;
+}
+#body{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.arrow{
+  position: fixed;
+  left: 30rpx;
+  top: 110rpx;
+  display: flex;
+  width: 25rpx;
+  height:25rpx;
+  border-left: 4rpx solid black;
+  border-top: 4rpx solid black;
+  transform: rotate(-45deg);
+}
+#selfIntroduction{
+  width: 690rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 20rpx;
+}
+
+#top {
+  background-color: #7eba74;
+  padding-bottom: 16rpx;
+  margin-top: -14rpx;
+  width: 760rpx;
+  display: flex;
+  height: 180rpx;
+}
+
+.my-margin > view > view:first-child{
+  margin-right: 140rpx;
+  flex: none;
+}

@@ -1,0 +1,93 @@
+#top {
+  display: flex;
+  margin-top: 50rpx;
+}
+
+#btu {
+  padding-top: 35rpx;
+  margin-left: -32rpx;
+}
+
+#search {
+  width: 363rpx;
+  display: flex;
+  margin: 36rpx 39rpx;
+  padding: 10rpx 10rpx;
+  border-radius: 20rpx;
+  border: solid 1rpx rgb(141, 141, 141);
+}
+
+#image1 {
+  width: 60rpx;
+  height: 40rpx;
+  margin-top: 16rpx;
+}
+
+#image2 {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  position: relative;
+  top: 20rpx;
+  right: 20rpx;
+  /* padding-top: 26rpx;
+  padding-left: -2rpx;
+  padding-bottom: 20rpx;
+  padding-right: 20rpx; */
+}
+#image2 image{
+  width: 26rpx;
+  height: 26rpx;
+}
+
+#input {
+  margin: 1rpx 10rpx;
+  width: 460rpx;
+}
+
+#input input {
+  padding: 10rpx 10rpx;
+}
+
+#history {
+  padding: 20rpx 37rpx;
+  margin-bottom: 15rpx;
+}
+
+#tips {
+  font-size: 36rpx;
+  font-weight: 550;
+}
+
+#list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data {
+  margin: 10rpx 10rpx;
+  padding-bottom: 10rpx;
+  padding-top: 4rpx;
+  color: rgb(51, 51, 51);
+}
+
+#cleanHistory {
+  width: 300rpx;
+  margin-top: 20rpx;
+}
+
+#nodata {
+  margin-left: 36rpx;
+  color: rgb(54, 54, 54);
+}
+
+.arrow {
+  position: fixed;
+  left: 15rpx;
+  top: 120rpx;
+  display: flex;
+  width: 25rpx;
+  height: 25rpx;
+  border-left: 4rpx solid black;
+  border-top: 4rpx solid black;
+  transform: rotate(-45deg);
+}

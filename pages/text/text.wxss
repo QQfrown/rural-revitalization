@@ -1,0 +1,150 @@
+/* pages/text/text.wxss */
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #70b679;
+  height: 130rpx;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  height: 300rpx;
+  padding: 15rpx;
+  border: 1rpx solid #6f89dd;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  box-shadow: 1rpx 1rpx 15rpx rgb(238, 236, 236);
+  align-items: center;
+}
+
+.shop-item {
+  background-color: #a5d19f;
+  display: flex;
+  padding: 15rpx;
+  border: 1rpx solid white;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  box-shadow: 2rpx 2rpx 15rpx white;
+  height: 220rpx;
+}
+
+.thumb image {
+  width: 240rpx;
+  height: 220rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+
+.shop-title {
+  font-weight: bold;
+}
+
+.test {
+  text-align: right;
+  color: blue;
+}
+
+/*  加载更多   */
+.weui-loading {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-animation: weuiLoading 1s steps(12, end) infinite;
+  animation: weuiLoading 1s steps(12, end) infinite;
+  /* background: transparent  */
+  background-size: 100%;
+}
+
+.weui-loadmore {
+  width: 65%;
+  margin: 1.5em auto;
+  line-height: 1.6em;
+  font-size: 14px;
+  text-align: center;
+}
+
+.weui-loadmore__tips {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#search1 image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 18rpx;
+  margin-top: -6rpx;
+}
+
+#search1 view {
+  line-height: 41rpx;
+  color: grey;
+}
+
+#logo image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+
+
+.arrow {
+  position: fixed;
+  left: 30rpx;
+  top: 99rpx;
+  display: flex;
+  width: 25rpx;
+  height: 25rpx;
+  border-left: 4rpx solid black;
+  border-top: 4rpx solid black;
+  transform: rotate(-45deg);
+}
+
+.fill {
+  height: 192rpx;
+}
+
+#logo {
+  margin-left: 70rpx;
+  padding-top: 6rpx;
+  margin-top: 44rpx;
+}
+
+#search1 {
+  margin-top: 58rpx;
+  width: 300rpx;
+  height: 61rpx;
+  padding-top: 20rpx;
+  display: flex;
+  margin-left: 47rpx;
+  padding-left: 20rpx;
+  margin-right: 205rpx;
+  background-color: white;
+  border-radius: 36rpx;
+}
+
+#top {
+  background-color: #7eba74;
+  padding-bottom: 16rpx;
+  margin-top: -14rpx;
+  width: 760rpx;
+  display: flex;
+  position: fixed;
+}
+#last {
+  text-align: center;
+  margin-bottom: 36rpx;
+  color: rgb(61, 61, 61);
+  margin-top: 30rpx;
+}

@@ -1,0 +1,227 @@
+#search1 image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 18rpx;
+  margin-top: -6rpx;
+}
+
+#search1 view {
+  line-height: 41rpx;
+  color: grey;
+}
+
+
+#logo image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+
+.arrow {
+  position: fixed;
+  left: 30rpx;
+  top: 120rpx;
+  display: flex;
+  width: 25rpx;
+  height: 25rpx;
+  border-left: 4rpx solid black;
+  border-top: 4rpx solid black;
+  transform: rotate(-45deg);
+}
+
+#write {
+  position: fixed;
+  top: 863rpx;
+  right: 20rpx;
+  background-color: #7eba74;
+  border-radius: 50%;
+}
+
+#write image {
+  width: 90rpx;
+  height: 90rpx;
+  padding-top: 20rpx;
+  padding-left: 24rpx;
+  padding-bottom: 20rpx;
+  padding-right: 20rpx;
+}
+
+.info {
+  display: flex;
+  flex-flow: column;
+  width: 180rpx;
+}
+
+.info image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+}
+
+.nickName {
+  font-size: 24rpx;
+  font-weight: bold;
+  text-align: center;
+  width: 180rpx;
+}
+
+.address {
+  padding-left: 30rpx;
+  font-size: 24rpx;
+  width: 180rpx;
+}
+
+.address image {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.unset view{
+  position: unset;
+}
+
+.picture {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.picture image {
+  width: 320rpx;
+  height: 320rpx;
+  border-radius: 20rpx;
+}
+
+.page {
+  padding-top: 8rpx;
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  margin-bottom: 80rpx;
+  border: solid 2rpx rgb(194, 194, 194);
+  border-radius: 10rpx;
+  padding-bottom: 20rpx;
+  background-color: #a5d19f;
+}
+
+#page_text {
+  padding-left: 24rpx;
+  color: rgb(26, 26, 26);
+  width: 665rpx;
+  height: 120rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  align-content: center;
+  margin-top: 16rpx;
+}
+
+#show {
+  display: flex;
+  background-color: white;
+  padding-top: 90rpx;
+}
+
+#show input {
+  padding-top: 10rpx;
+}
+
+#show view {
+  background-color: rgb(231, 231, 231);
+  height: 64rpx;
+  width: 500rpx;
+  border-radius: 8rpx;
+  padding-left: 20rpx;
+  margin-left: 20rpx;
+}
+
+#show button {
+  width: 160rpx;
+  height: 70rpx;
+  padding-top: 6rpx;
+}
+
+#last {
+  text-align: center;
+  margin-bottom: 36rpx;
+  color: rgb(61, 61, 61);
+}
+
+.fill {
+  height: 192rpx;
+}
+
+#logo {
+  margin-left: 70rpx;
+  padding-top: 6rpx;
+  margin-top: 44rpx;
+}
+
+#search1 {
+  margin-top: 58rpx;
+  width: 300rpx;
+  height: 61rpx;
+  padding-top: 20rpx;
+  display: flex;
+  margin-left: 47rpx;
+  padding-left: 20rpx;
+  margin-right: 205rpx;
+  background-color: white;
+  border-radius: 36rpx;
+}
+
+#top {
+  background-color: #7eba74;
+  padding-bottom: 16rpx;
+  margin-top: -14rpx;
+  width: 760rpx;
+  display: flex;
+  position: fixed;
+}
+
+.head {
+  height: 160rpx;
+  width: auto;
+  background-color: #a5d19f;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
+  display: flex;
+}
+
+.head-title {
+  display: flex;
+  flex-flow: column;
+  padding: 10rpx 0 10rpx 14rpx;
+}
+
+.title {
+  color: rgb(26, 26, 26);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16rpx 0 14rpx 0;
+  width: 380rpx;
+}
+
+.brief {
+  color: rgba(26, 26, 26,0.8);
+  width: 380rpx;
+}
+
+.hidden-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

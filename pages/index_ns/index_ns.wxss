@@ -1,0 +1,166 @@
+.project {
+  display: flex;
+  background-color: #a5d19f;
+  height: 265rpx;
+  border-radius: 110rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  margin-top: -16rpx;
+}
+
+.title {
+  font-family: 黑体;
+  font-size: X-large;
+  bottom: 34rpx;
+  margin-right: 452rpx;
+  margin-bottom: 36rpx;
+  margin-top: 6rpx;
+  display: flex;
+  margin-left: 30rpx;
+}
+
+.content {
+  margin-top: 60rpx;
+  justify-content: center;
+  text-align: center;
+}
+.content1{
+  margin-top: 46rpx;
+  justify-content: center;
+  text-align: center;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.product {
+  display: flex;
+  background-color: rgb(240, 199, 146);
+  height: 425rpx;
+  border-radius: 15%;
+  margin-top: 28rpx;
+}
+
+.lb {
+  /* float: left; */
+  width: 100%;
+  height: 440rpx;
+  padding: 0rpx;
+  position: absolute;
+  top: 20rpx;
+  margin-top: -122rpx;
+  /* margin-top: 51px; */
+  /* background-color: red; */
+}
+
+.lb swiper {
+  margin: 0rpx;
+  width: 100%;
+  height: 100%;
+  margin-top: 102rpx;
+  height: calc(100vw * 187 / 360);
+}
+
+.img_s {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper image {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* margin-right: 18px; */
+  /* display: block; */
+}
+
+.head_text {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  left: 65%;
+  bottom: 35%;
+  color: white;
+  font-size: x-large;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 75rpx;
+  width: 75rpx;
+  justify-content: center;
+  position: absolute;
+  margin-top: 20rpx;
+  margin-left: 32rpx;
+}
+
+.search {
+  width: 98%;
+}
+
+.search_arr {
+  height: 76rpx;
+  border-radius: 38rpx;
+  margin-left: 119rpx;
+  width: 403rpx;
+  margin-top: 18rpx;
+  background-color: white;
+}
+
+.search_arr input {
+  margin-left: -63rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+}
+
+.sousuo {
+  position: absolute;
+  margin-top: 16rpx;
+  right: 346rpx;
+  color: grey;
+}
+
+.page_row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 391rpx;
+  background-color: #7eba74;
+  height: 110rpx;
+  width: 780rpx;
+}
+
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 340rpx;
+  position: absolute;
+  margin-top: 25rpx;
+  z-index: 2;
+  width: 30rpx;
+  height: 30rpx;
+  text-align: center;
+}
+
+.div {
+  background-color: white;
+  height: 380rpx;
+  margin-top: 36rpx;
+  padding-top: 20rpx;
+}
+
+.choose {
+  display: flex;
+  margin-right: 50rpx;
+  width: 250rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  margin-top: -54rpx;
+  margin-right: 6rpx;
+  margin-left: 28rpx;
+}
+
+.right {
+  margin-top: 40rpx;
+}

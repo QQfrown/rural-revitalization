@@ -1,0 +1,88 @@
+/* pages/about/about.wxss */
+.shop {
+
+  background-color: #70b679;
+  height: 120rpx;
+  text-align: center;
+  /* display: flex; */
+}
+
+.thumb image {
+  width: 250rpx;
+  height: 190rpx;
+  display: block;
+  margin: 10rpx 50rpx 5rpx 10rpx;
+}
+
+.me {
+  text-align: center;
+  padding-top: 6.8%;
+  font-weight: 350;
+  font-size: 45rpx;
+  color: rgb(66, 66, 66);
+  margin-right: 20rpx;
+}
+
+.fill {
+  height: 192rpx;
+}
+
+#logo {
+  margin-left: 70rpx;
+  padding-top: 6rpx;
+  margin-top: 44rpx;
+}
+
+#search1 {
+  margin-top: 58rpx;
+  width: 300rpx;
+  height: 61rpx;
+  padding-top: 20rpx;
+  display: flex;
+  margin-left: 47rpx;
+  padding-left: 20rpx;
+  margin-right: 205rpx;
+  background-color: white;
+  border-radius: 36rpx;
+}
+
+#top {
+  background-color: #7eba74;
+  padding-bottom: 16rpx;
+  margin-top: -14rpx;
+  width: 760rpx;
+  display: flex;
+  position: fixed;
+}
+
+#logo image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.arrow {
+  position: fixed;
+  left: 30rpx;
+  top: 99rpx;
+  display: flex;
+  width: 25rpx;
+  height: 25rpx;
+  border-left: 4rpx solid black;
+  border-top: 4rpx solid black;
+  transform: rotate(-45deg);
+}
+
+.box {
+  width: 100%;
+  height: 100rpx;
+  box-shadow: 1rpx 5rpx 1rpx 1rpx rgb(175, 175, 175);
+  border: 1rpx solid white;
+  text-align: left;
+}
+
+.total {
+  background-color: white;
+  /* border: 2rpx solid rgb(199, 199, 199); */
+
+}

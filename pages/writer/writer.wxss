@@ -1,0 +1,53 @@
+#all {
+  padding: 5rpx 30rpx;
+}
+
+#title {
+  margin-top: 29rpx;
+  margin-left: 13px;
+}
+
+#brief {
+  margin-top: 29rpx;
+  margin-left: 13px;
+}
+
+#text {
+  border: solid 2rpx rgb(179, 179, 179);
+  border-radius: 10rpx;
+  margin: 20rpx 20rpx;
+  padding: 20rpx 20rpx;
+  background-color: white;
+}
+
+.arrow {
+  position: fixed;
+  left: 30rpx;
+  top: 110rpx;
+  display: flex;
+  width: 25rpx;
+  height: 25rpx;
+  border-left: 4rpx solid black;
+  border-top: 4rpx solid black;
+  transform: rotate(-45deg);
+}
+
+#top {
+  background-color: #7eba74;
+  padding-bottom: 16rpx;
+  margin-top: -14rpx;
+  width: 760rpx;
+  display: flex;
+  position: fixed;
+  height: 180rpx;
+}
+
+.fill {
+  height: 165rpx;
+}
+
+.top-title {
+  font-size: x-large;
+  margin-left: 260rpx;
+  margin-top: 80rpx;
+}

@@ -1,0 +1,37 @@
+<view id="all">
+  <view id="top">
+    <view class="1" style="display:flex;margin-top: 15px;">
+      <view class="arrow" bindtap="test1"></view>
+      <view id="logo">
+        <image src="{{avatarUrl}}"></image>
+      </view>
+      <view id="search1" bindtap="gotoSearch" data-pageName="team">
+        <image src="https://s1.imagehub.cc/images/2021/10/16/find.png"></image>
+        <view>请输入关键词</view>
+      </view>
+    </view>
+  </view>
+  <view class="fill"></view>
+  <view class="info" wx:for="{{info}}" wx:key="index">
+    <view class="info_right_img">
+      <image src="{{item.imageUrl}}"></image>
+      <view class="info_right">
+        <view class="top-title">{{item.title}}</view>
+        <view class="time">时间：{{item.workTime}}</view>
+        <view class="address">地点：{{item.address}}</view>
+        <view class="people">人数：{{item.personNum}}</view>
+      </view>
+    </view>
+    <view class="info_bottom">
+      <view class="telephone">QQ咨询群：{{item.telephone}}</view>
+      <view class="ability">能力：{{item.ability}}</view>
+      <view class="describe">活动描述：{{item.describeBrief}}</view>
+    </view>
+    <view class="button" bindtap="gotoApply" data-value="{{item.teamArtId}}">
+      <view class="bu">
+        <text>我要报名</text>
+      </view>
+    </view>
+  </view>
+  <view id="last" wx:if="{{nodata}}">我是有底线哒~</view>
+</view>

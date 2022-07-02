@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <image class="logo" src="{{imaUrl}}/upload/otherType/logo.png"></image>
+  <view class="button-sp-area">
+    <view class="left-button" style="background-color:#7eba74;height:100rpx;width:200rpx;border-radius: 18%;" bindtap="goto">
+      <!-- <button size="mini" bindtap="goto" style="background-color: #7eba74; color: white;">学生端</button> -->
+      <view class="text"><text>学生端</text></view>
+    </view>
+    <view class="right-button" style="background-color:#7eba74;height:100rpx;width:200rpx;border-radius:18%;" bindtap="goto1">
+      <view class="text"><text>非学生端</text></view>
+    </view>
+    <!-- <view class="right-button">
+        <button style="background-color: #7eba74; color: white;" size="mini" bindtap="goto1">非学生端</button>
+      </view> -->
+  </view>
+</view>

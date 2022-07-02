@@ -1,0 +1,49 @@
+<!--pages/test3/test3.wxml-->
+<view class="a">
+  <view class="arrow" bindtap="test1"></view>
+  <text style="font-size:x-large;margin-left:272rpx;margin-top:80rpx;position:absolute;">地址选择</text>
+</view>
+<form bindsubmit="formSubmit" report-submit="true">
+  <view class="redact-address">
+    <view class="possess-layout">
+      <view class="mains">
+        <view class="address-msg">
+          <view class="item-msg">所在地区：</view>
+          <view class="section" bindtap='select'>
+            <!-- bindblur="consigneeRegionInput"  -->
+            <input disabled="disabled" style="width: 600rpx;" placeholder="点击选择" 
+              value="{{ownerInfo.province===null?null:(ownerInfo.province+'-'+ownerInfo.city+'-'+ownerInfo.district)}}"
+              placeholder-class="phcolor"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bu">
+    <button id="btu" form-type="submit" type="primary">保存</button>
+  </view>
+</form>
+<view class="picker" animation="{{animationAddressMenu}}" style="visibility:{{addressMenuIsShow ? 'visible':'hidden'}}">
+  <view class="picker-view" animation="{{animationAddressMenu}}" style="visibility:{{addressMenuIsShow ? 'visible':'hidden'}}">
+    <!-- 确认取消按钮 -->
+    <view class='gangedBtn'>
+      <text class="city-cancel" catchtap="cityCancel">取消</text>
+      <text style="float: right" catchtap="citySure">确定</text>
+    </view>
+    <!-- 选择地址 -->
+    <picker-view class='cont' bindchange="cityChange" value="{{value}}" wx:key="">
+      <!-- 省 -->
+      <picker-view-column>
+        <view wx:for="{{provinces}}" class="picker-item" wx:key="index">{{item.name}}</view>
+      </picker-view-column>
+      <!-- 市 -->
+      <picker-view-column>
+        <view wx:for="{{citys}}" class="picker-item" wx:key="index">{{item.name}}</view>
+      </picker-view-column>
+      <!-- 区 -->
+      <picker-view-column>
+        <view wx:for="{{areas}}" class="picker-item" wx:key="index">{{item.name}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

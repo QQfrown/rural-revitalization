@@ -1,0 +1,22 @@
+<view id="title">
+  <view class="arrow" bindtap="test"></view>
+  <view id="hello">你好，{{nickName}}</view>
+  <view id="hello1" wx:if="{{isStu==='STUDENT'}}">下面有许多大学生可以参加的比赛资讯</view>
+  <view id="hello1" wx:else>下面有许多文章资讯</view>
+  <view id="hello2">快来一起康康吧</view>
+</view>
+
+<view id="body">
+  <view id="search1" bindtap="gotoSearch">
+      <image src="https://s1.imagehub.cc/images/2021/10/16/find.png"></image>
+      <view>请输入要搜索的内容</view>
+  </view>
+  <view id="list">
+    <view class="single" wx:for="{{competitionInfo}}" wx:key="index" bindtap="gotoWeb" data-value="{{item.jump_url}}">
+        <image src="{{item.image_url}}"></image>
+        <view class="name">{{item.title}}</view>
+        <view class="describe">{{item.describe_brief}}</view>
+    </view>
+  </view>
+  <view id="last" wx:if="{{nodata}}">我是有底线哒~</view>
+</view>

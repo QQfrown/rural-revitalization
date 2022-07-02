@@ -1,0 +1,53 @@
+<view id="top">
+  <view class="1" style="display:flex;margin-top: 25px;">
+    <view class="arrow" bindtap="test1"></view>
+    <view id="logo">
+      <image src="{{avatarUrl}}"></image>
+    </view>
+    <view id="search1" bindtap="gotoSearch" data-pageName="share">
+      <image src="https://s1.imagehub.cc/images/2021/10/16/find.png"></image>
+      <view>请输入关键词</view>
+    </view>
+  </view>
+</view>
+<view class="fill"></view>
+<view id="write" bindtap="gotoWrite">
+  <iconfont name="bianji" size="60" />
+  <!-- <image src="/image/write.png"></image> -->
+</view>
+<view wx:for="{{info}}" wx:key="index">
+  <view class="head">
+    <view class="info">
+      <image src="{{item.userInfo.avatarUrl}}"></image>
+      <view class="nickName hidden-text">{{item.userInfo.nickname}}</view>
+      <view class="address hidden-text">
+        <van-icon name="location-o" size="16" class="unset"></van-icon>
+        <text>{{item.userInfo.address}}</text>
+      </view>
+    </view>
+    <view class="head-title">
+      <view class="title hidden-text">{{item.title}}</view>
+      <view class="brief hidden-text">{{item.describeBrief}}</view>
+    </view>
+  </view>
+  <view class="page" bindtap="gotoDetail" data-value="{{item}}">
+    <view class="picture">
+      <view class="p1" wx:for="{{item.imgUrls}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </view>
+    </view>
+    <view id="page_text">{{item.describeDetail}}</view>
+  </view>
+</view>
+<view id="last" wx:if="{{nodata}}">我是有底线哒~</view>
+
+<van-popup show="{{ show }}" position="bottom" custom-style="height: 16%" closeable round bind:close="onClose">
+  <form bindsubmit="submit">
+    <view id="show">
+      <view>
+        <input placeholder="评论" cursor-spacing="14" name="comment" focus="{{focus}}" />
+      </view>
+      <button size="mini" form-type="submit" type="primary" bindtap="onClose">发布</button>
+    </view>
+  </form>
+</van-popup>

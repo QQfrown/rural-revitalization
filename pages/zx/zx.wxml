@@ -1,0 +1,34 @@
+<view class="lb">
+  <swiper indicator-dots="true" autoplay="true" interval="3000" current="0" circular="true" style="width:100%;">
+    <swiper-item>
+      <image class="img_s" src="{{imaUrl}}/upload/prodRecom/litchi.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <text class="head_text" bindtap="viewTap">#本周人气产品————荔枝</text>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imaUrl}}/upload/otherType/home/research.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <!-- <text class="head_text">标题2</text> -->
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imaUrl}}/upload/otherType/home/research2.jpg" style="width:100%;height:100%" mode="widthFix" alt=""></image>
+      <!-- <text class="head_text">标题3</text> -->
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="function">
+  <view class="right">
+    <image src="{{imaUrl}}/upload/otherType/product/tourism.png" style="width:286rpx;height:880rpx;margin-top: -92rpx;" bindtap="test3"></image>
+  </view>
+  <view class="left">
+    <view class="up">
+      <image src="{{imaUrl}}/upload/otherType/product/food.png" style="height:370rpx;width: 440rpx;" bindtap="test1"></image>
+    </view>
+    <view class="down">
+      <image src="{{imaUrl}}/upload/otherType/product/handcraft.png" style="height:372rpx;width: 440rpx;" bindtap="test2"></image>
+    </view>
+  </view>
+  <!-- 引入底部导航栏 -->
+  <import src="../../components/tabBar.wxml" />
+  <template is="tabBar" data="{{tabBar}}" />
+
+</view>
